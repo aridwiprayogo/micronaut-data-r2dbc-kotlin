@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.example
+testFramework: junit
+sourceLanguage: kotlin
+buildTool: gradle
+features: [ annotation-api, app-name, assertj, data, data-r2dbc, flyway, graalvm, gradle, hibernate-validator, http-client, jdbc-hikari, junit, kotlin, kotlin-application, kotlin-extension-functions, logback, mockito, netty-server, postgres, r2dbc, readme, shade, testcontainers, yaml ]

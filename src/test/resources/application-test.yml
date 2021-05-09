@@ -1,0 +1,5 @@
+r2dbc.datasources.default.url: r2dbc:tc:postgresql:///db?TC_IMAGE_TAG=12
+datasources:
+  default:
+    url: jdbc:tc:postgresql:13:///postgres
+    driverClassName: org.testcontainers.jdbc.ContainerDatabaseDriver

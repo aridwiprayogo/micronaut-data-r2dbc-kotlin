@@ -1,0 +1,28 @@
+micronaut:
+  application:
+    name: demo
+datasources:
+    default:
+      url: jdbc:postgresql://localhost:5432/postgres?user=postgres&password=root&currentSchema=public
+      driverClassName: org.postgresql.Driver
+      username: postgres
+      password: 'root'
+      schema: public
+r2dbc:
+  datasources:
+    default:
+      url: r2dbc:postgresql://localhost:5432/postgres
+      username: postgres
+      password: 'root'
+      schema-generate: none
+      dialect: POSTGRES
+flyway:
+  datasources:
+    default:
+      url: jdbc:postgresql://localhost:5432/postgres?user=postgres&password=root&currentSchema=public
+      driverClassName: org.postgresql.Driver
+      username: postgres
+      password: 'root'
+      locations: classpath:db/migration 
+      enabled: true
+      schemas: public
